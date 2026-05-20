@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BulkyWeb1</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Book <i class="bi bi-book-half"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,13 +27,19 @@
                             <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                            <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         @if (User.IsInRole(SD.Role_Admin))
                             {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Content Management
@@ -67,7 +73,7 @@
 
     <footer class="border-top footer text-muted bg-primary">
         <div class="container text-center text-light">
-            Made With <i class="bi bi-heartbreak-fill"></i> (lol me just trying to learn smth)
+            Made With <i class="bi bi-heartbreak-fill"></i> (HanumGoo, Last Update: 20 May 2026)
         </div>
     </footer>
     

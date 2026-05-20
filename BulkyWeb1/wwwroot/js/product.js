@@ -16,14 +16,21 @@ function loadDataTable() {
             {
                 data: "id",
                 "render": function (data) {
-                    return `<div class="w-75 btn-group" role="group">
-                     <a href="/admin/product/upsert/${data}" class="btn btn-primary mx-2">
-                        <i class="bi bi-pencil-square"></i> Edit
-                    </a>
-                    <a onClick=Delete('/admin/product/deleteEP/${data}') class="btn btn-danger mx-2">
-                        <i class="bi bi-trash"></i> Delete
-                    </a>
-                    </div>`
+                    return `<div class="d-flex gap-2">
+
+                            <a href="/admin/product/upsert/${data}"
+                                class="btn btn-sm btn-outline-primary">
+
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                            <a onClick=Delete('/admin/product/deleteEP/${data}')
+                                class="btn btn-sm btn-outline-danger">
+
+                                <i class="bi bi-trash"></i>
+                            </a>
+
+                            </div>`
                 },
                 "width": "30%"
             },
