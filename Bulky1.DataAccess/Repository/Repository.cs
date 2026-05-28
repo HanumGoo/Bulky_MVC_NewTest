@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Bulky1.DataAccess.Data;
 using Bulky1.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
 namespace Bulky1.DataAccess.Repository
 {
